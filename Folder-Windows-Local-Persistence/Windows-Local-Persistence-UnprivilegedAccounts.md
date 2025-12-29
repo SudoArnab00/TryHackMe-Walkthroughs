@@ -13,7 +13,6 @@ net localgroup "Remote Management Users" thmuser1 /add
 - **Backup Operators** are key users (for data only) who need to capture/read/write _everything / anything_ when backing up ignoring ACLs (_Access Control Lists_) even protected files like SAM (_Security Accounts Manager_) database and System Hives
 
 ### Assumptions
-- we assume you have already gained administrative access somehow and are trying to establish persistence from there.
 - we will assume you have dumped the password hashes of the victim machine and successfully cracked the passwords for the unprivileged accounts in use
 - we have already dumped the credentials on the server and have thmuser1's password. 
 
