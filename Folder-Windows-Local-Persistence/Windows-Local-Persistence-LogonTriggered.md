@@ -33,11 +33,12 @@ Any executables put there will be ran when logging in.
 
 ### Run / RunOnce
 Force user to execute a program on logon via registry - no need to place payloads in specific locations. 
+
     - HKCU\Software\Microsoft\Windows\CurrentVersion\Run
     - HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
     - HKLM\Software\Microsoft\Windows\CurrentVersion\Run
     - HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
-
+    
 **HKCU** - Only apply to current user
 **HKLM** - will apply to everyone
 
@@ -105,4 +106,5 @@ We will use this variable to assign a logon script to a user that will run when 
 - Start the listener on the attack machine and sign out the user so that the user logs in and payload initialises and you get reverse shell.
 
 - Get the `flag13.exe`
+
 ![WLP44](/img/WLP44.png)
