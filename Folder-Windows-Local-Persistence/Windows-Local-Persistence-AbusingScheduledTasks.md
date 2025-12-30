@@ -1,4 +1,4 @@
-## Room : [Windows Local Persistence - Backdooring Files](https://tryhackme.com/room/windowslocalpersistence)
+## Room : [Windows Local Persistence - Abusing Scheduled Tasks](https://tryhackme.com/room/windowslocalpersistence)
 
 We will be using the built-in **Windows task scheduler**
 Using command: `schtasks`
