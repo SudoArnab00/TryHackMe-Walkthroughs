@@ -12,9 +12,9 @@ I'm a cybersecurity enthusiast and pentesting learner, building in public. Here,
 - Follow me on [TryHackMe](https://tryhackme.com/p/Abyx0x0)
 
 ## TryHackMe Stats
-- **Rank**: Top 1% (13395)
-- **Badges**: 31
-- **Streak**: 45
-- **Rooms Completed**: 209
+- **Rank**: Top 1% (12901)
+- **Badges**: 32
+- **Streak**: 54
+- **Rooms Completed**: 215
 
 *All walkthroughs are spoiler-conscious*
